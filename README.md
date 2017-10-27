@@ -35,9 +35,12 @@ That is it :)
 # How to create a Solution with this CRUD template:
 
 1. Open Wakanda Studio
-2. Create a new project. 
-3. In the Web dialog, choose "Angular 4 Inspinia Company" 
- 
+2. Create a new Solution. 
+3. In the backend dialog, choose "Login Emp-Comp Gen"
+4. In the Web dialog, choose "Angular 4 Inspinia Company" 
+5. Hit the button create
+6. Once the project is created, just hit the button Run ! 
+
 Enjoy your template. 
 
 
