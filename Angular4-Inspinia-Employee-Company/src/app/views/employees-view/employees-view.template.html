@@ -1,0 +1,36 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="ibox-title">
+    <h5 *ngIf="companyID">Employees list of : {{employees[0]?.companyName}}</h5>
+    <h5 *ngIf="!companyID">Employees list</h5>
+  </div>
+    <div class="ibox-content">
+      <div class="form-group">
+        <input [(ngModel)]="queryString" (ngModelChange)="getEmployeesPage(1, companyID)" type="text" placeholder="Search for employee..." class="form-control" name="top-search" id="top-search">
+      </div>
+        <table class="table table-hover no-margins">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Manager</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees | paginate: { itemsPerPage: pageSize, currentPage: p, totalItems: total }" [routerLink]="['/employees', employee.ID]">
+              <td><img [src]="employee.photoURI" onError="this.src='assets/img/landing/avatar_all.png'"></td>
+              <td>{{employee.fullName}}</td>
+              <td>{{employee.title}}</td>
+              <td>{{employee.companyName}}</td>
+              <td>{{employee.managerName}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="paging-div dataTables_paginate paging_simple_numbers pagination">
+          <pagination-controls (pageChange)="getEmployeesPage($event, companyID)"></pagination-controls>
+        </div>
+
+      </div>
+</div>

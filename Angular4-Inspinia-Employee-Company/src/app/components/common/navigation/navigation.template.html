@@ -1,0 +1,23 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="block m-t-xs"> <strong class="font-bold">{{currentUser.fullName}}</strong> </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+
+                </div>
+            </li>
+            <li [ngClass]="{active: activeRoute('mainView')}">
+                <a [routerLink]="['/mainView']"><i class="fa fa-bank"></i> <span class="nav-label">Companies</span></a>
+            </li>
+            <li [ngClass]="{active: activeRoute('employeesView')}">
+                <a [routerLink]="['/employeesView']"><i class="fa fa-users"></i> <span class="nav-label">Employees</span> </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
