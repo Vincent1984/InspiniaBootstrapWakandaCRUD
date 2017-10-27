@@ -1,9 +1,9 @@
 # InspiniaBootstrapWakandaCRUD
 Complete Wakanda Template: Angular 4 + Bootstrap + Grid + Login + Register (to be used with the backend template https://github.com/rmello4d/EmployeeCompanyLogin)
 
-**** You should be able to run this example in less than 5 mins after the installation ! This is a ... ** 
+You should be able to run this example in less than 5 mins after the installation ! 
 
-... ready to use with data via the backend template. Once you have installed (see below) you will be able to start any project with a responsive layout, authentication, login and register ready to use, grids and crud operations that will show you how to get the best from Wakanda and Angular. 
+Once you have installed (see below) you will be able to start any project with a responsive layout, authentication, login and register ready to use, grids and crud operations that will show you how to get the best from Wakanda and Angular. 
 
 This is also a great template to learn web development, using the Wakanda Studio you will be able to modiy the code and see in real time the changes. Start your web app now !
 
@@ -38,10 +38,10 @@ That is it :)
 
 1. Open Wakanda Studio
 2. Create a new Solution. 
-3. In the backend dialog, choose "Login Emp-Comp Gen"
+3. In the backend dialog, choose "Login Emp-Comp Gen" (if you do not have this option, install the backend template https://github.com/rmello4d/EmployeeCompanyLogin)
 4. In the Web dialog, choose "Angular 4 Inspinia Company" 
 5. Hit the button create
-6. Once the project is created, just hit the button Run ! 
+6. Once the project is created, just click the button Run ! 
 
 Enjoy your template. 
 
